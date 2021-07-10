@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">A Survey On Random Things</h1>
+            <p id="description">Thanks in advance for participating in this survey</p>
+        </header>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label id="number-label" for="number">Number</label>
+                <input type="number" id="number" name="number" min="5" max="10" placeholder="Enter a number between 5 and 10">
+            </div>
+            
+            <div class="form-group">
+                <label for="dropdown">Which month is perfect for your vacation?</label>
+                <select name="month" id="dropdown">
+                    <option value="">Select a month</option>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                </select>
+            </div>
+            
+            <fieldset>
+                <legend>What is your Favorite sport?</legend>
+                <div class="radio-group">
+                    <input type="radio" name="fav-sport" id="cricket" value="cric">
+                    <label for="cricket">Cricket</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="football" name="fav-sport" value="ftbl">
+                    <label for="football">Football</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="hockey" name="fav-sport" value="hky">
+                    <label for="hockey">Hockey</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Which areas have you visited before?</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="chattogram" name="places" value="ctg">
+                    <label for="chattogram">Chattogram</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="dhaka" name="places" value="dhaka">
+                    <label for="dhaka">Dhaka</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="places" id="sylhet" value="slt">
+                    <label for="sylhet">Sylhet</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="places" id="coxsbazar" value="cox">
+                    <label for="coxsbazar">Cox's Bazar</label>
+                </div>
+            </fieldset>
+            
+            <div class="form-group">
+                <label for="comment">Your Comment</label>
+                <textarea name="comment" id="comment" rows="5" placeholder="Please give your valuable comment on the issue"></textarea>
+            </div>
+            
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
